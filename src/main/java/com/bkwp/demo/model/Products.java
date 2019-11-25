@@ -10,7 +10,6 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Products {
     @Id
     private String id;
-    private String itemId;
     private String type;
     private byte size;
     private Rating rating;
@@ -18,20 +17,12 @@ public class Products {
     private long price;
     private long availableCount;
 
-    public String getID() {
+    public String getId() {
         return id;
     }
 
-    public void setID(String value) {
+    public void setId(String value) {
         this.id = value;
-    }
-
-    public String getItemId() {
-        return itemId;
-    }
-
-    public void setItemId(String itemId) {
-        this.itemId = itemId;
     }
 
     public String getType() {
